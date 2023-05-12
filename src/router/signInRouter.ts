@@ -11,4 +11,4 @@ router2.route('/:id/:pass').get((req,res)=>{
     console.log(userId,userId2)
 })
 
-module.exports=router2
+module.exports=router2 
