@@ -1,12 +1,6 @@
-const express1=require("express")
-
-
-const router=(express1.Router())
-router.route("/").post((req,res)=>{res.status(200).send("signup data received")
-console.log(req.body)})
-
-
-
-
-
+import express from "express";
+const signupcontroller =require("../controller/authController");
+const router=(express.Router())
+router.route("/")
+.post(signupcontroller.signUp);
 module.exports =router
